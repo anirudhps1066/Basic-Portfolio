@@ -210,3 +210,6 @@ footer{
     text-align: center;
     font-weight: bolder;
 }
+.icon:hover{
+    background-image: linear-gradient(to bottom right,yellow,red);
+}
