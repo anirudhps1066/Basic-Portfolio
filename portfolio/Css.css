@@ -213,3 +213,30 @@ footer{
 .icon:hover{
     background-image: linear-gradient(to bottom right,yellow,red);
 }
+.icon:hover i{
+    color: white;
+    animation: shake 0.75s;
+}
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+}
+.up_arrow{
+    background-image: linear-gradient(to bottom right,yellow,red);
+    float: right;
+    margin: 20px 10px 5px 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
