@@ -1,242 +1,88 @@
 *{
-    margin: 0px;
-    padding: 0px;
-    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
-.container{
+body{
     width: 100%;
     height: 100vh;
-    position: relative;
-    background-color: white;
-}
-.navbar{
     display: flex;
-    width: 84%;
-    justify-content: space-between;
-    margin-left:100px;
-    align-items: center;
-}
-#logo{
-    width: 130px;
-}
-.linkitem{
-    display: inline-block;
-    margin: 10px 20px;
-}
-.links{
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-}
-.links:hover{
-    color: red;
-}
-#name{
-    color: orange;
-    
-}
-.title{
-    margin-top: 13%;
-    margin-left: 12%;
-    
-}
-.title h1{
-    font-size: 50px;
-    margin-bottom: 20px;
-}
-.download{
-    text-decoration: none;
-    color: white;
-    background-color: black;
-    padding: 10px 30px;
-    margin-top: 25px;
-    display: inline-block;
-    border-radius: 10px;
-}
-.images{
-    width: 45%;
-    height: 85%;
-    position: absolute;
-    right: 20px;
-    bottom: 0px;
-}
-.imagegroup{
-    height:100%;
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    transform: translateX(-65%);
-    transition: bottom 1s, left 2s;
-}
-.images:hover #girl{
-    left: 40%;
-}
-
-.images:hover #shape{
-    bottom:40px;
-}
-#about{
-    margin: 20% 8% 0% 8%;
-}
-.heading{
-    text-align: center;
-}
-.heading h1{
-    font-size: 30px;
-}
-.heading span{
-    color: green;
-    font-size: 20px;
-}
-.about_content{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    column-gap: 2rem;
-    margin-top: 3rem;
-}
-.about_img img{
-    width: 80%;
-    border-radius: 10px;
-}
-.about_para p{
-    text-align: justify;
-    font-size: 20px;
-}
-.information{
-    margin-top: 25px;
-}
-.info_box span{
-    margin-left: 1rem;
-    font-size: 20px;
-}
-.number span{
-    margin-left: 1rem;
-    font-size: 20px;
-    margin-top:30px;
-    display: inline-block;
-
-}
-.email{
-    font-size: 20px;
-    margin-top:30px;
-}
-.github{
-    font-size: 20px;
-    margin-top:30px;
-
-}
-.linkedin{
-    font-size: 20px;
-    margin-top: 30px;
-}
-#skills{
-    margin: 7% 8% 0% 8%;
-}
-.skill_container{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    column-gap: 2rem;
-    margin-top: 3rem;
-}
-.progress_container{
-    margin-top: 10px;
-}
-.progress_bar{
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
-    padding: 1rem;
-    justify-content: space-between;
-    position: relative;
-}
-.bar{
-    width: 100%;
-    height:0.5rem;
-    background-color: black;
-    border-radius: 5px;
-    position: absolute;
-    bottom: 0px;
-
-}
-.html_bar{
-    width: 95%;
-    background-color: orange;
-}
-.html_bar1{
-    width:80%;
-    background-color: orange;
-}
-.html_bar2{
-    width:60%;
-    background-color: orange;
-
-}
-.html_bar3{
-    width:10%;
-    background-color: orange;
-
-}
-.skill_image{
-    width: 90%;
-    padding:4rem;
-    margin-top:-15%;
-}
-#contact{
-    margin: 3% 8% 0% 8%;
-}
-.icon_set{
-    display: flex;
-    align-items: center; 
     justify-content: center;
-    margin-top:3rem;
+    align-items: center;
+}
+.parent-box{
+    width: 300px;
+    height: 600px;
 }
 .icon{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    font-size: 55px;
+    text-align: center;
+    color:#232023 ;
+}
+.head{
+    margin: 24px 0;
+    text-align: center;
+    font-size: 25px;
+    color: #504c50;
+}
+.login-box{
+    background-color: #afb7c01e;
+    width: 100%;
+    height: 250px;
+    padding: 15px 16px 18px 16px;
+    border: 1px solid #8ba0b570;
+    border-radius: 7px;
+}
+input{
+    width: 100%;
+    padding:7px;
+    font-size: 15px;
+    border-radius: 5px;
+    border:1px solid #8ba0b570 ;
+    outline: none;
+    transition: all 0.1s linear;
+}
+.input-box{
+    margin-bottom: 15px;
+}
+.label{
+    font-size: 14px;
+    margin-top:25px;
+    display: flex;
+    justify-content: space-between;
+    color: #232023;
+}
+.label a{
+    font-size: 14px;
+    text-decoration: none;
+    color: rgba(0,0,255,0.635);
+}
+input:focus{
+    border: 2px solid rgba(0,0,255,0.541);
+}
+.btn{
+    font-size: 18px;
+    background: rgba(9,135,9,0.989);
+    color: white;
+    cursor: pointer;
+}
+.signup{
+    width: 100%;
+    margin: 18px 0;
+    padding: 20px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 0px 15px;
+    border: 1px solid #8ba0b570;
+    border-radius: 7px;
 }
-    
-.icon i{
-    font-size: 2rem;
-    color: black;
-    
+.signup span{
+    font-size: 15px;
+    color:#232023;
 }
-footer{
-    margin-top: 50px;
-    text-align: center;
-    font-weight: bolder;
-}
-.icon:hover{
-    background-image: linear-gradient(to bottom right,yellow,red);
-}
-.icon:hover i{
-    color: white;
-    animation: shake 0.75s;
-}
-@keyframes shake{
-    10%{
-        transform: rotate(15deg);
-    }
-    20%{
-        transform: rotate(-15deg);
-    }
-    30%{
-        transform: rotate(15deg);
-    }
-    40%{
-        transform: rotate(-15deg);
-    }
-}
-.up_arrow{
-    background-image: linear-gradient(to bottom right,yellow,red);
-    float: right;
-    margin: 20px 10px 5px 0px;
-}
-
-html{
-    scroll-behavior: smooth;
+.signup a{
+    font-size: 14px;
+    padding-left:3px;
+    text-decoration: none;
+    color: rgba(0,0,255,0.635);
 }
